@@ -1,14 +1,14 @@
 pipeline {
    agent any
    stages {
-      stage("Compile this project") {
+      stage("Compilation") {
          steps {
                echo "This is compilation"
             } 
       }
       stage("Testing") {
          steps {
-            sh "This is testing"
+            echo "This is testing"
          }
       }
        stage("Packaging") {
